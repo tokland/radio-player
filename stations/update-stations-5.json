@@ -1,0 +1,44 @@
+[
+  {
+    "id": "catalunya-radio",
+    "name": "Catalunya Radio",
+    "stream_url": "http://catradio.ccma.audioemotion.stream.flumotion.com/ccma/catradio.mp3",
+    "logo_url": "http://download.zaudera.com/public/radio-player/images/catRadio.jpg"
+  },
+  {
+    "id": "catalunya-informacio",
+    "name": "Catalunya Informació",
+    "stream_url": "http://catinform.ccma.audioemotion.stream.flumotion.com/ccma/catinform.mp3",
+    "logo_url": "http://download.zaudera.com/public/radio-player/images/catInfo.jpg"
+  },
+  {
+    "id": "catalunya-musica",
+    "name": "Catalunya Música",
+    "stream_url": "http://catmusica.ccma.audioemotion.stream.flumotion.com/ccma/catmusica.mp3",
+    "logo_url": "http://download.zaudera.com/public/radio-player/images/catMusica.jpg"
+  },
+  {
+    "id": "rac1",
+    "name": "RAC1",
+    "stream_url": "http://streaming3.radiocat.net",
+    "logo_url": "http://download.zaudera.com/public/radio-player/images/rac1.jpg"
+  },
+  {
+    "id": "cadena-ser-barcelona",
+    "name": "Cadena SER Barcelona",
+    "stream_url": "http://19373.live.streamtheworld.com/SER_BARCELONA_SC",
+    "logo_url": "http://download.zaudera.com/public/radio-player/images/cadenaSerBarcelona.jpg"
+  },
+  {
+    "id": "cadena-ser-madrid",
+    "name": "Cadena SER Madrid",
+    "stream_url": "http://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER_SC",
+    "logo_url": "http://download.zaudera.com/public/radio-player/images/cadenaSerMadrid.jpg"
+  },
+  {
+    "id": "rne-radio-3",
+    "name": "RNE - Radio 3",
+    "stream_url": "http://radio3.rtveradio.cires21.com/radio3.mp3",
+    "logo_url": "http://download.zaudera.com/public/radio-player/images/rne-radio-3.jpg"
+  }
+]
