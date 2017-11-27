@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {TouchableHighlight} from 'react-native';
-//import CacheableImage from 'react-native-cacheable-image'
-CacheableImage = Image;
 
 const styles = {
   main: (isPlaying) => {backgroundColor: isPlaying ? "#DDD" : "#FFF"},
@@ -20,7 +18,7 @@ const images = {
 export default StationItem = ({station, isPlaying, onPress, onFavoritePress}) =>
   <TouchableHighlight style={styles.main(isPlaying)} onPress={() => onPress(station)}>
     <View style={styles.inner}>
-      <CacheableImage source={station.logo_source} style={styles.logo} />
+      <Image source={station.logo_source} style={styles.logo} />
 
       <Text style={styles.name}>
         {station.name}

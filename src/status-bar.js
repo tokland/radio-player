@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {TouchableHighlight} from 'react-native';
-//import CacheableImage from 'react-native-cacheable-image'
-CacheableImage = Image;
 
 
 const styles = {
@@ -21,7 +19,7 @@ const images = {
 export default StatusBar = ({station, status, isPlaying, onPress}) =>
     station ?
       <View style={styles.main}>
-        <CacheableImage source={station.logo_source} style={styles.logo} />
+        <Image source={station.logo_source} style={styles.logo} />
         <Text style={styles.name}>
           {station.name}
         </Text>
