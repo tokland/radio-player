@@ -3,8 +3,8 @@ import {View, Text, Image} from 'react-native';
 import {TouchableHighlight} from 'react-native';
 
 const styles = {
-  main: (isPlaying) => {backgroundColor: isPlaying ? "#DDD" : "#FFF"},
-  inner: {flexDirection: "row", height: 80},
+  main: {},
+  inner: isPlaying => ({flexDirection: "row", height: 80, backgroundColor: isPlaying ? "#DDD" : "#FFF"}),
   logo: {width: 60, height: 60, margin: 10, justifyContent: 'center'},
   name: {flex: 1, padding: 5, fontSize: 16, lineHeight: 40, justifyContent: 'center', color: '#fff'},
   favorite: {width: 32, height: 32, marginTop: 16, marginRight: 10, marginLeft: 10},
@@ -16,8 +16,8 @@ const images = {
 };
 
 export default StationItem = ({station, isPlaying, onPress, onFavoritePress}) =>
-  <TouchableHighlight style={styles.main(isPlaying)} onPress={() => onPress(station)}>
-    <View style={styles.inner}>
+  <TouchableHighlight onPress={() => onPress(station)}>
+    <View style={styles.inner(isPlaying)}>
       <Image source={station.logo_source} style={styles.logo} />
 
       <Text style={styles.name}>
