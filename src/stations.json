@@ -1,0 +1,1268 @@
+[
+  {
+    "id": "ibiza-global-radio",
+    "name": "Ibiza Global Radio",
+    "info": "FM 97.6, Ibiza, España",
+    "stream": "http://ibizaglobalradio.streaming-pro.com:8024/listen.pls"
+  },
+  {
+    "id": "ibiza-sonica-radio",
+    "name": "Ibiza Sonica Radio",
+    "info": "FM 92.4, Ibiza, España",
+    "stream": "http://stream3.ibizasonica.com:8136/listen.pls"
+  },
+  {
+    "id": "top-radio",
+    "name": "Top Radio",
+    "info": "FM 97.2, Madrid, España",
+    "stream": "http://playerservices.streamtheworld.com/pls/TOPRADIOAAC.pls"
+  },
+  {
+    "id": "los-40-principales",
+    "name": "Los 40 Principales",
+    "info": "FM 93.9, Madrid, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/LOS40AAC.flv"
+  },
+  {
+    "id": "la-suegra-fm",
+    "name": "La Suegra FM",
+    "info": "FM 90.1, Madrid, España",
+    "stream": "http://streaming.hdserver.biz:9300/listen.pls"
+  },
+  {
+    "id": "kis-fm",
+    "name": "Kiss FM",
+    "info": "FM 101.7, Barcelona, España",
+    "stream": "rtmp://kissfm.es.flash3.glb.ipercast.net/kissfm.es-live/aac.stream"
+  },
+  {
+    "id": "radio-marca",
+    "name": "Radio Marca",
+    "info": "FM 103.5, Madrid, España",
+    "stream": "http://www.marca.com/radio/directo/index.html?aP=false&eI=0_71mmohqp&sT=entryId&rT=rtmp&dL=nacional&pR=Radio%20MARCA%20en%20directo&pP=true"
+  },
+  {
+    "id": "elixir-fm",
+    "name": "ELIXIR FM",
+    "info": "Malaga, España",
+    "stream": "http://radioserver10.profesionalhosting.com:41004/listen.pls?sid=1"
+  },
+  {
+    "id": "radio-flaixbac",
+    "name": "Ràdio Flaixbac",
+    "info": "FM 106.1, Barcelona, España",
+    "stream": "http://utils.grupflaix.cat/player/playlist/radioflaixbac.pls"
+  },
+  {
+    "id": "m80-radio",
+    "name": "M80 Radio",
+    "info": "FM 90.5, Barcelona, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/M80RADIO.flv"
+  },
+  {
+    "id": "cadena-cope",
+    "name": "Cadena COPE",
+    "info": "Madrid, España",
+    "stream": "http://www.cope.es/directo/Directo-Emision-Directo-por-defecto&id=2012092018050001&activo=5"
+  },
+  {
+    "id": "maxima-fm-barcelona",
+    "name": "Máxima FM Barcelona",
+    "info": "FM 104.2, Barcelona, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/MAXIMAFM.flv"
+  },
+  {
+    "id": "onda-cero-madrid",
+    "name": "Onda Cero Madrid",
+    "info": "FM 91.7, Madrid, España",
+    "stream": "http://icecast-streaming.nice264.com/ondacero?type=.mp3"
+  },
+  {
+    "id": "blue-marlin-ibiza",
+    "name": "Blue Marlin Ibiza",
+    "info": "Ibiza, España",
+    "stream": "http://s3.viastreaming.net:8635/listen.pls"
+  },
+  {
+    "id": "beach-groves-radio",
+    "name": "BeachGrooves Radio",
+    "info": "FM 97.1, Marbella, España",
+    "stream": "http://stream.beachgrooves.com:8000/listen.pls?sid=1"
+  },
+  {
+    "id": "cadena-ser-radio-madrid",
+    "name": "Cadena SER - Radio Madrid",
+    "info": "FM 105.4, Madrid, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/SER_MADRID.mp3"
+  },
+  {
+    "id": "radio-marca-cantabria",
+    "name": "Radio Marca Cantabria",
+    "info": "FM 94.2, Santander, España",
+    "stream": "http://91.121.77.67:8042/listen.pls"
+  },
+  {
+    "id": "mega-latina",
+    "name": "Mega Latina",
+    "info": "FM 104.3 / 104.5, Tenerife, España",
+    "stream": "http://5.135.183.124:8129/stream?type=.flv"
+  },
+  {
+    "id": "flaix-fm",
+    "name": "Flaix FM",
+    "info": "FM 105.7, Barcelona, España",
+    "stream": "http://radiostream.flaixfm.cat:8002/listen.pls"
+  },
+  {
+    "id": "radio-intereconomia",
+    "name": "Radio Intereconomia",
+    "info": "FM 95.1, Madrid, España",
+    "stream": "https://streaming.enetres.net/16011939C62D44ED91350508FB25828B022/smil:live.smil/master.m3u8"
+  },
+  {
+    "id": "catalunya-radio",
+    "name": "Catalunya Radio",
+    "info": "FM 102.8, Barcelona, España",
+    "stream": "http://catradio.ccma.audioemotion.stream.flumotion.com/ccma/catradio.mp3"
+  },
+  {
+    "id": "misterium",
+    "name": "Misterium",
+    "info": "Alicante, España",
+    "stream": "http://streaming.radionomy.com/Misterium"
+  },
+  {
+    "id": "rne-radio-nacional",
+    "name": "RNE - Radio Nacional",
+    "info": "AM 585, Madrid, España",
+    "stream": "http://rne.rtveradio.cires21.com/rne.mp3"
+  },
+  {
+    "id": "radio-maria-espana",
+    "name": "Radio Maria España",
+    "info": "FM 96.9, Madrid, España",
+    "stream": "http://cloudrad.io/radiomariaespana/listen.pls"
+  },
+  {
+    "id": "ibiza-live-radio",
+    "name": "Ibiza Live Radio",
+    "info": "Ibiza, España",
+    "stream": "http://198.105.214.140:6571/Live.mp3"
+  },
+  {
+    "id": "radio-tele-taxi",
+    "name": "Radio TeleTaxi",
+    "info": "FM 97.7, Barcelona, España",
+    "stream": "http://radioteletaxi2-adswizz.grupott.stream.flumotion.com/gtt/radioteletaxi2.mp3"
+  },
+  {
+    "id": "loca-fm-latino",
+    "name": "Loca FM - Latino",
+    "info": "Madrid, España",
+    "stream": "http://5.39.66.128:8012/live?type=.flv"
+  },
+  {
+    "id": "europa-fm",
+    "name": "Europa FM",
+    "info": "FM 91.0, Madrid, España",
+    "stream": "http://a3live-lh.akamaihd.net/i/auhds/geoeuropafm_1@430327/master.m3u8"
+  },
+  {
+    "id": "radio-tropical",
+    "name": "Radio Tropical",
+    "info": "FM 102.9, Bilbao, España",
+    "stream": "http://www.emisorasonline.net/conexion/v5.0/player50/index.php?cc=000536&cont=000404"
+  },
+  {
+    "id": "radio-openings-animes",
+    "name": "Radio Openings Animes",
+    "info": "Madrid, España",
+    "stream": "http://listen.radionomy.com/radio-openings-animes"
+  },
+  {
+    "id": "vaughan-radio",
+    "name": "Vaughan Radio",
+    "info": "FM 105.7, Madrid, España",
+    "stream": "http://vaughanradioweb.streaming-pro.com:8057/listen.pls"
+  },
+  {
+    "id": "oasis-fm",
+    "name": "Oasis FM",
+    "info": "FM 106.3, Tenerife, España",
+    "stream": "http://s1.viastreaming.net:7120/listen.pls"
+  },
+  {
+    "id": "radio-maitreya",
+    "name": "Radio Maitreya",
+    "info": "Madrid, España",
+    "stream": "http://radiomaitreya.org:8000/radio_maitreya?mp3"
+  },
+  {
+    "id": "maxima-fm-madrid",
+    "name": "Máxima FM Madrid",
+    "info": "FM 104.3, Madrid, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/MAXIMAFM.mp3"
+  },
+  {
+    "id": "edenex-la-radio-del-misterio",
+    "name": "EDENEX la Radio del Misterio",
+    "info": "Malaga, España",
+    "stream": "http://cervera.eldialdigital.com:8056"
+  },
+  {
+    "id": "latino-fm",
+    "name": "Latino FM",
+    "info": "FM 99.5, Malaga, España",
+    "stream": "http://185.23.192.118:8080/latino/listen.pls"
+  },
+  {
+    "id": "los-40-principales-valencia",
+    "name": "Los 40 Principales Valencia",
+    "info": "FM 94.2, Valencia, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/LOS40AAC.flv"
+  },
+  {
+    "id": "via-radio",
+    "name": "Vía Radio",
+    "info": "FM 93.3, Vigo, España",
+    "stream": "http://radioserver9.profesionalhosting.com:35223/listen.pls"
+  },
+  {
+    "id": "radio-taoro",
+    "name": "Radio Taoro",
+    "info": "FM 96.5, Tenerife, España",
+    "stream": "http://94.23.67.20:8066/listen.pls"
+  },
+  {
+    "id": "fiesta-fm",
+    "name": "Fiesta FM",
+    "info": "FM 90.5, Madrid, España",
+    "stream": "http://srv0410.lcinternet.com:8018/live?type=.flv"
+  },
+  {
+    "id": "la-mega-costa-del-sol",
+    "name": "La Mega Costa del Sol",
+    "info": "FM 91.7, Malaga, España",
+    "stream": "http://streaming8.elitecomunicacion.es:8220/listen.pls"
+  },
+  {
+    "id": "radio-marca-barcelona",
+    "name": "Radio Marca Barcelona",
+    "info": "FM 89.1, Barcelona, España",
+    "stream": "http://radioweb.radiomarcabarcelona.com:9000/stream"
+  },
+  {
+    "id": "das-inselradio-malorca",
+    "name": "Das Inselradio Mallorca",
+    "info": "FM 95.8, Palma de Mallorca, España",
+    "stream": "http://stream.live-inselradio.com:8000/listen.pls"
+  },
+  {
+    "id": "rne-radio-3",
+    "name": "RNE - Radio 3",
+    "info": "FM 95.8, Madrid, España",
+    "stream": "http://radio3.rtveradio.cires21.com/radio3.mp3"
+  },
+  {
+    "id": "radio-gigante",
+    "name": "Radio Gigante",
+    "info": "FM 105.1, Tenerife, España",
+    "stream": "http://server1.emitironline.com:2199/tunein/radiogigante.pls"
+  },
+  {
+    "id": "coast-fm-tenerife",
+    "name": "Coast FM Tenerife",
+    "info": "FM 89.2, Tenerife, España",
+    "stream": "http://s3.viastreaming.net:8840/listen.pls"
+  },
+  {
+    "id": "jaz-radio-bcn",
+    "name": "Jazz Radio Bcn",
+    "info": "Barcelona, España",
+    "stream": "https://www.radionomy.com/en/radio/jazzradiobcn/listen/?version=1.1&url=JazzRadioBcn&type=medium&autoplay=false&volume=50&color1=%23000000&color2=%23ffffff&language=en&referer=http%3A%2F%2Fjazzradiobcn.playtheradio.com%2F"
+  },
+  {
+    "id": "radio-mix-fm",
+    "name": "Radio Mix FM",
+    "info": "FM 106.3, Riaño de Ibio, España",
+    "stream": "http://ns5.emisionlocal.com:8000/listen.pls"
+  },
+  {
+    "id": "radio-planeta",
+    "name": "Radio Planeta",
+    "info": "FM 92.8, Malaga, España",
+    "stream": "http://5.79.66.113:8004/stream"
+  },
+  {
+    "id": "cadena-dial",
+    "name": "Cadena Dial",
+    "info": "FM 91.1, Madrid, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/CADENADIAL.mp3"
+  },
+  {
+    "id": "radio-sirena-cope",
+    "name": "Radio Sirena COPE",
+    "info": "FM 98.9, Benidorm, España",
+    "stream": "http://streaming.radiosirena.es:8000/rsirenacope"
+  },
+  {
+    "id": "rumbera-network-sevila",
+    "name": "Rumbera Network Sevilla",
+    "info": "FM 103.5, Seville, España",
+    "stream": "http://37.187.79.153:5236/stream"
+  },
+  {
+    "id": "radio-costa",
+    "name": "Radio Costa",
+    "info": "FM 101.2, Torrevieja, España",
+    "stream": "http://178.33.166.7:7602/listen.pls"
+  },
+  {
+    "id": "onda-cero-granada",
+    "name": "Onda Cero Granada",
+    "info": "FM 92.0, Granada, España",
+    "stream": "http://icecast-streaming.nice264.com/granada"
+  },
+  {
+    "id": "rne-radio-clasica",
+    "name": "RNE - Radio Clásica",
+    "info": "FM 96.5, Madrid, España",
+    "stream": "http://radioclasica.rtveradio.cires21.com/radioclasica/mp3/icecast.audio"
+  },
+  {
+    "id": "cadena-ser-ser-malaga",
+    "name": "Cadena SER - SER Málaga",
+    "info": "FM 100.4, Malaga, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/SER_MALAGA.flv"
+  },
+  {
+    "id": "rac105-radio",
+    "name": "RAC105 Ràdio",
+    "info": "FM 105, Barcelona, España",
+    "stream": "http://rac105.radiocat.net/listen.pls"
+  },
+  {
+    "id": "radiole",
+    "name": "Radioolé",
+    "info": "FM 92.4, Madrid, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/RADIOLE.mp3"
+  },
+  {
+    "id": "radio-galega-rg-musica",
+    "name": "Radio Galega - RG Musica",
+    "info": "Santiago de Compostela, España",
+    "stream": "http://media1.crtvg.es/live/_definst_/rgm/playlist.m3u8"
+  },
+  {
+    "id": "onda-cero-monforte-de-lemos",
+    "name": "Onda Cero Monforte de Lemos",
+    "info": "FM 91.8, Monforte de Lemos, España",
+    "stream": "http://icecast-streaming.nice264.com/monforte"
+  },
+  {
+    "id": "spanish-flamenco-guitar-society",
+    "name": "Spanish Flamenco Guitar Society",
+    "info": "Madrid, España",
+    "stream": "http://streaming.radionomy.com/FlamencoGuitarSociety"
+  },
+  {
+    "id": "factory-fm-madrid",
+    "name": "Factory FM Madrid",
+    "info": "FM 102.4, Madrid, España",
+    "stream": "http://eclipse.bli-cdn.xyz:8099/stream?type=.flv"
+  },
+  {
+    "id": "los40",
+    "name": "LOS40",
+    "info": "FM 91.7, Rioja, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/LOS40.mp3"
+  },
+  {
+    "id": "radio-intereconomia-barcelona",
+    "name": "Radio Intereconomia Barcelona",
+    "info": "FM 98.2, Barcelona, España",
+    "stream": "https://streaming.enetres.net/16011939C62D44ED91350508FB25828B022/smil:live.smil/master.m3u8"
+  },
+  {
+    "id": "canal-fiesta-radio",
+    "name": "Canal Fiesta Radio",
+    "info": "FM 89.1, Jaén, España",
+    "stream": "http://195.55.74.207/rtva/canalfiestaradio_master.mp3"
+  },
+  {
+    "id": "open-lab",
+    "name": "OpenLab",
+    "info": "Ibiza, España",
+    "stream": "http://wma10.fluidstream.net:8100"
+  },
+  {
+    "id": "radio-narcea",
+    "name": "Radio Narcea",
+    "info": "FM 107.5, Cangas del Narcea, España",
+    "stream": "http://91.126.223.28:9830/listen.pls"
+  },
+  {
+    "id": "radio-marbela-dep-vocal-house",
+    "name": "Radio Marbella - Deep Vocal House",
+    "info": "Marbella, España",
+    "stream": "http://192.99.39.108:7872/listen.pls?sid=1"
+  },
+  {
+    "id": "kis-fm-canaries",
+    "name": "Kiss FM Canaries",
+    "info": "FM 99.4, Puerto Rico de Gran Canaria, España",
+    "stream": "http://andromeda.shoutca.st:8396/listen.pls?sid=1"
+  },
+  {
+    "id": "hit-fm-ibiza",
+    "name": "Hit FM Ibiza",
+    "info": "FM 96.6, Ibiza, España",
+    "stream": "http://hitfm.es.audio1.glb.ipercast.net:8000/hitfm.es/mp3"
+  },
+  {
+    "id": "radio-costa-tenerife-sur",
+    "name": "Radio Costa Tenerife Sur",
+    "info": "FM 93.8, Tenerife, España",
+    "stream": "http://radiocostatenerife.sytes.net:8010/stream.mp3?type=.flv"
+  },
+  {
+    "id": "radio-one-malorca",
+    "name": "Radio One Mallorca",
+    "info": "Palma de Mallorca, España",
+    "stream": "http://69.64.92.79:8276/listen.pls"
+  },
+  {
+    "id": "onda-cero-barcelona",
+    "name": "Onda Cero Barcelona",
+    "info": "FM 93.5, Barcelona, España",
+    "stream": "http://a3live-lh.akamaihd.net/i/auhds/barcelona_1@388703/master.m3u8"
+  },
+  {
+    "id": "radio-coatan-893",
+    "name": "Radio Coatan 89.3",
+    "info": "FM 89.3, San Sebastian, España",
+    "stream": "http://stream.serverinfinity.com:7012/listen.pls"
+  },
+  {
+    "id": "radio-top20",
+    "name": "RadioTop20",
+    "info": "FM 107.4, Terrassa, España",
+    "stream": "http://sc1.ipip.cz:8012/listen.pls"
+  },
+  {
+    "id": "olimpika-1078-fm",
+    "name": "Olimpika 107.8 FM",
+    "info": "FM 107.8, Madrid, España",
+    "stream": "http://62.210.11.128:9007/stream"
+  },
+  {
+    "id": "radio-torevieja",
+    "name": "Radio Torrevieja",
+    "info": "FM 107.1, Torrevieja, España",
+    "stream": "http://server2.crearradio.com:8158/listen.pls?sid=1"
+  },
+  {
+    "id": "97-la-radio",
+    "name": "97.7 La Radio",
+    "info": "FM 97.7, Valencia, España",
+    "stream": "rtmp://teledifusion.tv/977live/la977stream"
+  },
+  {
+    "id": "hfm-ibiza-radio",
+    "name": "HFM Ibiza Radio",
+    "info": "Ibiza, España",
+    "stream": "http://stream.radiojar.com/kht3hhpmb.pls"
+  },
+  {
+    "id": "radio-7-fm",
+    "name": "Radio 7 FM",
+    "info": "FM 92.7, Barakaldo, España",
+    "stream": "http://radio7.streaming-pro.com:7501/listen.pls"
+  },
+  {
+    "id": "tnt-rock-radio",
+    "name": "TNT Rock Radio",
+    "info": "Alicante, España",
+    "stream": "http://s2streamingradio.desafiohosting.com:8023/stream"
+  },
+  {
+    "id": "radio-oro-malaga",
+    "name": "Radio Oro Malaga",
+    "info": "FM 95.2, Malaga, España",
+    "stream": "http://185.23.192.118:8080/radiooromalaga/listen.pls"
+  },
+  {
+    "id": "hit-fm-93",
+    "name": "Hit FM 93.3",
+    "info": "FM 93.3, Las Palmas de Gran Canaria, España",
+    "stream": "http://www.hitfmradio.es/online/playlist.pls"
+  },
+  {
+    "id": "maxima-fm-valencia",
+    "name": "Máxima FM Valencia",
+    "info": "FM 95.7, Valencia, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/MAXIMAFM.mp3"
+  },
+  {
+    "id": "radio-vila-real",
+    "name": "Radio Vila-real",
+    "info": "FM 92.2, Villareal, España",
+    "stream": "http://srv0411.lcinternet.com:9022/live"
+  },
+  {
+    "id": "ecuador-stereo",
+    "name": "Ecuador Stereo",
+    "info": "FM 103.7, Madrid, España",
+    "stream": "rtmp://wowza.hdserver.biz/wowza/9336"
+  },
+  {
+    "id": "fun-radio-valencia",
+    "name": "Fun Radio Valencia",
+    "info": "FM 91.1, Valencia, España",
+    "stream": "http://5.39.66.128:23500/listen.pls"
+  },
+  {
+    "id": "radio-kanal-barcelona",
+    "name": "Radio Kanal Barcelona",
+    "info": "FM 106.9, Barcelona, España",
+    "stream": "http://radioserver7.profesionalhosting.com:31826/listen.pls?sid=1"
+  },
+  {
+    "id": "rac1",
+    "name": "RAC1",
+    "info": "FM 87.7, Barcelona, España",
+    "stream": "http://xcast3.radiocat.net/listen.pls"
+  },
+  {
+    "id": "maxima-fm-sevila",
+    "name": "Máxima FM Sevilla",
+    "info": "FM 96.5, Seville, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/MAXIMAFMaac.flv"
+  },
+  {
+    "id": "energy-fm-tenerife",
+    "name": "Energy FM Tenerife",
+    "info": "FM 92.1, Tenerife, España",
+    "stream": "http://92.48.87.11:8192/listen.pls"
+  },
+  {
+    "id": "espy-fm",
+    "name": "ESPY FM",
+    "info": "FM 87.9, España",
+    "stream": "http://eclipse.bli-cdn.xyz:8083/la879"
+  },
+  {
+    "id": "radio-martorel",
+    "name": "Radio Martorell",
+    "info": "FM 100.3, Barcelona, España",
+    "stream": "http://radiomartorell.streaming-pro.com:8061/"
+  },
+  {
+    "id": "chanquete-fm",
+    "name": "Chanquete FM",
+    "info": "FM 95.2, Malaga, España",
+    "stream": "http://185.23.192.118:8080/chanquetemalaga/listen.pls"
+  },
+  {
+    "id": "rne-radio-5",
+    "name": "RNE - Radio 5",
+    "info": "AM 657, Madrid, España",
+    "stream": "http://radio5.rtveradio.cires21.com/radio5/mp3/icecast.audio"
+  },
+  {
+    "id": "radio-sefarad",
+    "name": "Radio Sefarad",
+    "info": "Madrid, España",
+    "stream": "http://www2.radiosefarad.com/joomla/images/mp3/sefaradparaweb.mp3"
+  },
+  {
+    "id": "radio-gladys-palmera",
+    "name": "Radio Gladys Palmera",
+    "info": "Madrid, España",
+    "stream": "http://54.247.76.135:8000/ch02"
+  },
+  {
+    "id": "maxima-fm-malaga",
+    "name": "Máxima FM Malaga",
+    "info": "FM 94.5, Malaga, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/MAXIMAFMaac.flv"
+  },
+  {
+    "id": "qfm-943",
+    "name": "Qfm 94.3",
+    "info": "FM 94.3, Santa Cruz de Tenerife, España",
+    "stream": "http://50.97.94.44:8005/listen.pls"
+  },
+  {
+    "id": "fresh-radio-spain",
+    "name": "Fresh Radio Spain",
+    "info": "FM 97FM, Benidorm, España",
+    "stream": "http://kepler.shoutca.st:8031/stream"
+  },
+  {
+    "id": "radio-lanzarote",
+    "name": "Radio Lanzarote",
+    "info": "FM 90.7, Arrecife de Lanzarote, España",
+    "stream": "http://server1.emitironline.com:11299/radio.mp3"
+  },
+  {
+    "id": "radio-malaka",
+    "name": "RadioMalaka",
+    "info": "FM 108.0, Malaga, España",
+    "stream": "http://5.135.183.124:8163/stream?type=.flv"
+  },
+  {
+    "id": "10-oldies",
+    "name": "1000 Oldies",
+    "info": "Zaragoza, España",
+    "stream": "http://listen.radionomy.com/1000oldies"
+  },
+  {
+    "id": "la-noche-del-hombre-lobo",
+    "name": "La noche del hombre lobo",
+    "info": "Barcelona, España",
+    "stream": "http://lobocast.org.es:8000/stream?type=.flv"
+  },
+  {
+    "id": "hit-fm",
+    "name": "Hit FM",
+    "info": "AM 828, Barcelona, España",
+    "stream": "http://hitfm.es.audio1.glb.ipercast.net:8000/hitfm.es/mp3"
+  },
+  {
+    "id": "todoexitos-metal",
+    "name": "Todoexitos Metal",
+    "info": "Malaga, España",
+    "stream": "http://www.todoexitos.com/./modules/mod_ngs_shoutcast/singleplaylist.php?format=M3U&ip=hertz.todoexitos.com&port=8206"
+  },
+  {
+    "id": "radio-guaira-840-am",
+    "name": "Radio Guaira 840 AM",
+    "info": "AM 840, Villarrica, España",
+    "stream": "http://s4.viastreaming.net:8965/listen.pls"
+  },
+  {
+    "id": "melodia-fm",
+    "name": "Melodía FM",
+    "info": "FM 101.0, Mallorca, España",
+    "stream": "http://icecast-streaming.nice264.com:80/melodiafmback"
+  },
+  {
+    "id": "maxima-fm-malorca",
+    "name": "Maxima FM Mallorca",
+    "info": "FM 98.4, Mallorca, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/MAXIMAFMAAC.flv"
+  },
+  {
+    "id": "radio-nova-nordic",
+    "name": "Radio Nova Nordic",
+    "info": "FM 87.7, Rojales, España",
+    "stream": "http://s34.myradiostream.com:9694/listen.pls"
+  },
+  {
+    "id": "cadena-ser-radio-monzon",
+    "name": "Cadena SER - Radio Monzón",
+    "info": "FM 103.3, Monzón, España",
+    "stream": "http://93.92.169.132:8090/radiomonzon"
+  },
+  {
+    "id": "radio-andalucia-informacion",
+    "name": "Radio Andalucía Información",
+    "info": "FM 90.7, Granada, España",
+    "stream": "http://195.55.74.207/rtva/canalsurradiogranada.mp3"
+  },
+  {
+    "id": "hits-fm-madrid",
+    "name": "Hits FM Madrid",
+    "info": "Madrid, España",
+    "stream": "http://85.214.82.94:8004/listen.pls"
+  },
+  {
+    "id": "i-cat-jaz",
+    "name": "iCat Jazz",
+    "info": "Barcelona, España",
+    "stream": "http://icatjazz.ccma.audioemotion.stream.flumotion.com/ccma/icatjazz.mp3"
+  },
+  {
+    "id": "radio-isora",
+    "name": "Radio Isora",
+    "info": "FM 107.3, Tenerife, España",
+    "stream": "http://servidor2.todoexitos.com:7140/listen.pls"
+  },
+  {
+    "id": "radio-emanuel",
+    "name": "Radio Emanuel",
+    "info": "FM 87.8, Malaga, España",
+    "stream": "http://lokuranetworks.com:8000/live"
+  },
+  {
+    "id": "zona-rumbera",
+    "name": "Zona Rumbera",
+    "info": "Palma de Mallorca, España",
+    "stream": "http://streaming.radionomy.com/Zona-Rumbera-Online"
+  },
+  {
+    "id": "latinos-fm",
+    "name": "Latinos FM",
+    "info": "FM 107.9, Valencia, España",
+    "stream": "http://195.154.33.95:8078/listen.pls?sid=1"
+  },
+  {
+    "id": "radio-ahora-983",
+    "name": "Radio Ahora 98.3",
+    "info": "FM 98.3, Pamplona, España",
+    "stream": "http://s37.myradiostream.com:8638/listen.pls?sid=1"
+  },
+  {
+    "id": "106-easy-fm",
+    "name": "106 Easy FM",
+    "info": "FM 106 .0, Marbella, España",
+    "stream": "http://94.228.133.3:8010/listen.pls"
+  },
+  {
+    "id": "onda-cero-valdepenas",
+    "name": "Onda Cero Valdepeñas",
+    "info": "FM 99.8, Valdepenas, España",
+    "stream": "http://icecast-streaming.nice264.com/valdepenas"
+  },
+  {
+    "id": "radio-tentacion-914-fm",
+    "name": "Radio Tentacion 91.4 FM",
+    "info": "FM 91.4, Madrid, España",
+    "stream": "http://88.26.228.190:8010/listen.pls"
+  },
+  {
+    "id": "synth-hero-radio",
+    "name": "Synth Hero Radio",
+    "info": "Madrid, España",
+    "stream": "http://listen.radionomy.com/Synth-Hero"
+  },
+  {
+    "id": "adagio-radio",
+    "name": "AdagioRadio",
+    "info": "Madrid, España",
+    "stream": "http://listen.radionomy.com/adagioradio"
+  },
+  {
+    "id": "radio-atlantis",
+    "name": "Radio Atlantis",
+    "info": "FM 101.7, Tenerife, España",
+    "stream": "http://radionetz.de:8000/atlantisfm.mp3"
+  },
+  {
+    "id": "radio-jaz",
+    "name": "Radio Jazz",
+    "info": "Zaragoza, España",
+    "stream": "http://listen.radionomy.com/1RadioJazz"
+  },
+  {
+    "id": "club-fm-malorca",
+    "name": "ClubFM Mallorca",
+    "info": "FM 92.0, Palma de Mallorca, España",
+    "stream": "http://streaming.enantena.com:8000/clubfmmallorca128.mp3"
+  },
+  {
+    "id": "onda-cero-alicante",
+    "name": "Onda Cero Alicante",
+    "info": "FM 106.5, Alicante, España",
+    "stream": "http://a3live-lh.akamaihd.net/i/auhls/alicante_1@388703/master.m3u8"
+  },
+  {
+    "id": "col-fm-radio",
+    "name": "Cool FM Radio",
+    "info": "FM 97.4, Benidorm, España",
+    "stream": "http://51.255.161.146:8044/listen.pls"
+  },
+  {
+    "id": "los-40-benidorm",
+    "name": "Los 40 Benidorm",
+    "info": "FM 103.8, Benidorm, España",
+    "stream": "http://84.232.113.170:8000/40Benidorm.mp3"
+  },
+  {
+    "id": "hospitalet-fm-radio-dance",
+    "name": "Hospitalet FM - Radio Dance",
+    "info": "Barcelona, España",
+    "stream": "http://radionomy.letoptop.fr/player/?radiouid=399ec881-d139-4884-b883-5574afaf1448&color=000405&bgcolor=16eef5&width=450&size=12&font=Arial&autoplay=true"
+  },
+  {
+    "id": "diva-sound-radio",
+    "name": "Diva Sound Radio",
+    "info": "FM 95.1, Granada, España",
+    "stream": "http://streaming.elitecomunicacion.es:8040/listen.pls"
+  },
+  {
+    "id": "nova-radio-loret",
+    "name": "Nova Radio Lloret",
+    "info": "FM 90.2, Girona, España",
+    "stream": "http://lloret.frilab.com:8000/"
+  },
+  {
+    "id": "canal-sur-radio",
+    "name": "Canal Sur Radio",
+    "info": "FM 105.1, Sevilla, España",
+    "stream": "http://www.canalsur.es/portada-adirecto-722225.html&directo=player_csr"
+  },
+  {
+    "id": "tropical-fm",
+    "name": "Tropical FM",
+    "info": "FM 102.1, Madrid, España",
+    "stream": "http://usa1.usastreams.com:8000/tropical"
+  },
+  {
+    "id": "es-radio-valencia-1015",
+    "name": "esRadio Valencia 1015",
+    "info": "FM 101.5, Valencia, España",
+    "stream": "http://livestreaming3.esradio.fm/stream64.mp3"
+  },
+  {
+    "id": "onda-cero-malorca",
+    "name": "Onda Cero Mallorca",
+    "info": "FM 95.1, Palma de Mallorca, España",
+    "stream": "http://icecast-streaming.nice264.com/mallorca"
+  },
+  {
+    "id": "radio-el-dia",
+    "name": "Radio EL DÍA",
+    "info": "FM 91.8, Santa Cruz de Tenerife, España",
+    "stream": "http://185.50.197.212:9974/listen.pls"
+  },
+  {
+    "id": "euskaleria-iratia",
+    "name": "Euskalerria Irratia",
+    "info": "FM 98.3, Pamplona, España",
+    "stream": "http://server4.beatproducciones.com:8014/listen.pls"
+  },
+  {
+    "id": "cadena-ser-radio-principal-monforte",
+    "name": "Cadena SER - Radio Principal Monforte",
+    "info": "FM 97.0, Monforte de Lemos, España",
+    "stream": "http://srv0510.emisorasonline.com:8007/live"
+  },
+  {
+    "id": "radio-marca-zaragoza",
+    "name": "Radio Marca Zaragoza",
+    "info": "FM 87.6, Zaragoza, España",
+    "stream": "http://www.marca.com/radio/directo/index.html?aP=false&eI=0_71mmohqp&sT=entryId&rT=hdnetworkmanifest&dL=nacional&pR=Radio%20MARCA%20en%20directo&pP=true&em=true"
+  },
+  {
+    "id": "radio-cienciaes",
+    "name": "Radio Cienciaes",
+    "info": "España",
+    "stream": "http://ns331078.ip-176-31-120.eu:8000/mpd"
+  },
+  {
+    "id": "1-hits-80s",
+    "name": "1 HITS 80s",
+    "info": "Zaragoza, España",
+    "stream": "http://listen.radionomy.com/1HITS80s"
+  },
+  {
+    "id": "mozartiana",
+    "name": "Mozartiana",
+    "info": "Madrid, España",
+    "stream": "http://listen.radionomy.com/Mozartiana"
+  },
+  {
+    "id": "rne-radio-exterior",
+    "name": "RNE Radio Exterior",
+    "info": "Madrid, España",
+    "stream": "http://radioexterior.rtveradio.cires21.com/radioexterior/mp3/icecast.audio?rnd=130453"
+  },
+  {
+    "id": "radio-espana-romaniaes",
+    "name": "Radio Espana-Romania.es",
+    "info": "Madrid, España",
+    "stream": "http://radio.espana-romania.es:8000/listen.pls?sid=1"
+  },
+  {
+    "id": "fm-valencia-radio-klara",
+    "name": "FM València - Radio Klara",
+    "info": "FM 104.4, Valencia, España",
+    "stream": "http://74.52.37.26:6030/listen.pls"
+  },
+  {
+    "id": "gin-tonic-radio",
+    "name": "GinTonicRadio",
+    "info": "Ibiza, España",
+    "stream": "http://listen.radionomy.com/gintonicradio"
+  },
+  {
+    "id": "onda-cero-alzira",
+    "name": "Onda Cero Alzira",
+    "info": "FM 106.0, Alzira, España",
+    "stream": "http://icecast-streaming.nice264.com/alzira"
+  },
+  {
+    "id": "spectrum-fm",
+    "name": "Spectrum FM",
+    "info": "FM 105.5, Argovejo, España",
+    "stream": "http://5.63.151.52:8027/listen.pls"
+  },
+  {
+    "id": "son-orquestas-radio",
+    "name": "Son Orquestas Radio",
+    "info": "Tenerife, España",
+    "stream": "http://listen.radionomy.com/SonOrquestas"
+  },
+  {
+    "id": "fun-radio-directo",
+    "name": "Fun Radio - Directo",
+    "info": "Madrid, España",
+    "stream": "http://5.39.66.128:23500/"
+  },
+  {
+    "id": "fiesta-fm-levante",
+    "name": "Fiesta FM Levante",
+    "info": "FM 88.4, Alicante, España",
+    "stream": "http://srv0411.lcinternet.com:9006/stream?type=.flv"
+  },
+  {
+    "id": "radio-sol-xi",
+    "name": "Radio Sol XXI",
+    "info": "FM 99.8, Madrid, España",
+    "stream": "http://radiosolxxi.streaming-pro.com:8028"
+  },
+  {
+    "id": "ceuta-dep-radio",
+    "name": "Ceuta Deep Radio",
+    "info": "Ibiza, España",
+    "stream": "http://listen.radionomy.com/ceutadeep"
+  },
+  {
+    "id": "ibiza-sound-radio",
+    "name": "Ibiza Sound Radio",
+    "info": "Ibiza, España",
+    "stream": "http://23.89.9.181:9780/stream"
+  },
+  {
+    "id": "radio-barca-english",
+    "name": "Radio Barça - English",
+    "info": "Barcelona, España",
+    "stream": "http://tunein.streamguys1.com/rbarsa_eng?type=.aac"
+  },
+  {
+    "id": "coast-two-tenerife",
+    "name": "CoastTWO Tenerife",
+    "info": "Tenerife, España",
+    "stream": "http://uk1.internet-radio.com:15614/listen.pls"
+  },
+  {
+    "id": "aragon-radio",
+    "name": "Aragón Radio",
+    "info": "FM 93.7, Zaragoza, España",
+    "stream": "http://aragonradio.stream.flumotion.com/zaragoza/live-web/main.m3u8"
+  },
+  {
+    "id": "hitradio-malorca",
+    "name": "Hitradio Mallorca",
+    "info": "Palma de Mallorca, España",
+    "stream": "http://streaming101.radionomy.com/hitradiomallorca"
+  },
+  {
+    "id": "radio-oro",
+    "name": "Radio Oro",
+    "info": "FM 94.4, Marbella, España",
+    "stream": "http://185.23.192.118:8004/listen.pls"
+  },
+  {
+    "id": "radio-marca-cadiz",
+    "name": "Radio Marca Cádiz",
+    "info": "FM 101.7, Cádiz, España",
+    "stream": "http://www.marca.com/radio/directo/index.html?aP=false&eI=0_71mmohqp&sT=entryId&rT=hdnetworkmanifest&dL=nacional&pR=Radio%20MARCA%20en%20directo&pP=true&em=true"
+  },
+  {
+    "id": "route-6-radio",
+    "name": "Route 66 Radio",
+    "info": "Segovia, España",
+    "stream": "http://192.151.154.170:8151/listen.pls?sid=1"
+  },
+  {
+    "id": "onda-latina",
+    "name": "Onda Latina",
+    "info": "FM 87.6, Madrid, España",
+    "stream": "http://servidor2.todoexitos.com:6120/listen.pls"
+  },
+  {
+    "id": "roca-fm-madrid",
+    "name": "Roca FM Madrid",
+    "info": "FM 100.9, Madrid, España",
+    "stream": "http://95.154.193.6:8115/listen.pls?sid=1"
+  },
+  {
+    "id": "el-prat-radio",
+    "name": "El Prat Radio",
+    "info": "FM 91.6, Barcelona, España",
+    "stream": "http://radio.elpratradio.com:5000/listen.pls?sid=1"
+  },
+  {
+    "id": "gente-radio",
+    "name": "Gente Radio",
+    "info": "FM 95.6, Tenerife, España",
+    "stream": "http://srv0411.lcinternet.com:9002/stream"
+  },
+  {
+    "id": "radio-sabadel-946",
+    "name": "Ràdio Sabadell 94.6",
+    "info": "FM 94.6, Sabadell, España",
+    "stream": "http://online.radiosabadell.fm:8000/stream"
+  },
+  {
+    "id": "cadena-ser-radio-ubeda",
+    "name": "Cadena SER - Radio Úbeda",
+    "info": "FM 101.5, Jaén, España",
+    "stream": "http://srv3031.lcinternet.com:8007/live1"
+  },
+  {
+    "id": "radio-espinosa-merindades",
+    "name": "Radio Espinosa Merindades",
+    "info": "España",
+    "stream": "http://srv3021.lcinternet.com:8004/stream?type=.flv"
+  },
+  {
+    "id": "radio-luz-a-las-naciones-96-fm",
+    "name": "Radio Luz A Las Naciones 99.6 FM",
+    "info": "FM 99.6, Cartagena, España",
+    "stream": "http://5.39.76.68:8022/listen.pls"
+  },
+  {
+    "id": "la-fresca-fm",
+    "name": "La Fresca FM",
+    "info": "FM 96.9, Écija, España",
+    "stream": "http://stream.produccionesdale.com:8899/ecija?type=.flv"
+  },
+  {
+    "id": "radio-municipal-de-terasa",
+    "name": "Ràdio Municipal de Terrassa",
+    "info": "FM 95.2, Terrassa, España",
+    "stream": "http://5.189.181.203:9306/listen.pls?sid=1"
+  },
+  {
+    "id": "cadena-ser-radio-barbastro",
+    "name": "Cadena SER - Radio Barbastro",
+    "info": "FM 91.2, Barbastro, España",
+    "stream": "http://streaming.radiohuesca.com:8070/radiobarbastro"
+  },
+  {
+    "id": "cadena-ser-radio-cinco-vilas",
+    "name": "Cadena SER - Radio Cinco Villas",
+    "info": "FM 94.1, Ejea de los Caballeros, España",
+    "stream": "http://emisoras.cadenaser.com:8085/ejea"
+  },
+  {
+    "id": "radio-exitos-de-los-60s-70s-80s-90s",
+    "name": "Radio Exitos de los 60s 70s 80s 90s",
+    "info": "Jerez de la Frontera, España",
+    "stream": "http://listen.radionomy.com/exitosdelos60s70s80s90s"
+  },
+  {
+    "id": "es-radio",
+    "name": "esRadio",
+    "info": "Madrid, España",
+    "stream": "http://livestreaming3.esradio.fm/stream64.mp3"
+  },
+  {
+    "id": "radio-libertad",
+    "name": "Radio Libertad",
+    "info": "FM 107.0, Madrid, España",
+    "stream": "http://www.emisorasonline.net/conexion/v5.0/player50/index.php?cc=001005&cont=000658"
+  },
+  {
+    "id": "ibiza-party-radio",
+    "name": "Ibiza Party Radio",
+    "info": "Madrid, España",
+    "stream": "http://streaming210.radionomy.com:80/Ibiza-Party-Radio"
+  },
+  {
+    "id": "la-radio-del-gato",
+    "name": "La Radio del Gato",
+    "info": "Madrid, España",
+    "stream": "http://cabhs31.sonixcast.com:20292/listen.pls?sid=1"
+  },
+  {
+    "id": "hear-mefm-house-junkies",
+    "name": "HearMe.fm - House Junkies",
+    "info": "Madrid, España",
+    "stream": "http://hearme.fm:8005/stream"
+  },
+  {
+    "id": "m21-radio",
+    "name": "M21 Radio",
+    "info": "FM 88.6, Madrid, España",
+    "stream": "http://streaming.m21radio.es/hls/live/m21radio_m21radio.m3u8"
+  },
+  {
+    "id": "cat-radio-i-cat",
+    "name": "Cat Radio - iCat",
+    "info": "Barcelona, España",
+    "stream": "http://icatfm.ccma.audioemotion.stream.flumotion.com/ccma/icatfm.mp3"
+  },
+  {
+    "id": "global-radio-965-fm",
+    "name": "Global Radio 96.5 FM",
+    "info": "FM 96.5, Malaga, España",
+    "stream": "http://stream.seav.co.uk:8000/stream.mp4"
+  },
+  {
+    "id": "mega-star-costa-del-sol",
+    "name": "MegaStar Costa del Sol",
+    "info": "FM 97.1, Malaga, España",
+    "stream": "http://streaming5.elitecomunicacion.es:8030/live.mp3"
+  },
+  {
+    "id": "los-40-malaga",
+    "name": "Los 40 Málaga",
+    "info": "FM 102.8, Malaga, España",
+    "stream": "http://playerservices.streamtheworld.com/api/livestream-redirect/LOS40AAC.flv"
+  },
+  {
+    "id": "latinos-fm-radio",
+    "name": "Latinos FM Radio",
+    "info": "FM 101.7, Valencia, España",
+    "stream": "http://radio.latinos.fm/LATINOSFM.mp3"
+  },
+  {
+    "id": "radio-luz-de-luna",
+    "name": "Radio Luz De Luna",
+    "info": "Valencia, España",
+    "stream": "http://www.luzdeluna.info/playlist.pls"
+  },
+  {
+    "id": "tele-elx-radio-radio-marca",
+    "name": "Tele Elx Radio - Radio Marca",
+    "info": "FM 101.4, Valencina de la Concepcion, España",
+    "stream": "rtmp://teledifusion.tv/teleelxradio/teleelxradiolive"
+  },
+  {
+    "id": "radio-faycan",
+    "name": "Radio Faycan",
+    "info": "FM 104.2, Las Palmas de Gran Canaria, España",
+    "stream": "http://www.emisorasonline.net/conexion/v5.0/player50/index.php?cc=000411&cont=000408"
+  },
+  {
+    "id": "radio-amanecer-bierzo",
+    "name": "Radio Amanecer Bierzo",
+    "info": "FM 96.3, Ponferrada, España",
+    "stream": "http://158.69.26.181:9312/;"
+  },
+  {
+    "id": "los-megaexitos-radio",
+    "name": "Los Megaexitos Radio",
+    "info": "Murcia, España",
+    "stream": "http://listen128.radionomy.com/losmegaexitos"
+  },
+  {
+    "id": "total-fm-918",
+    "name": "Total FM 91.8",
+    "info": "FM 91.8, Javea, España",
+    "stream": "http://s6.myradiostream.com:7046/;"
+  },
+  {
+    "id": "rock-satelite-madrid-one",
+    "name": "rockSatelite(((MadridONE)))",
+    "info": "España",
+    "stream": "http://streaming208.radionomy.com/rockSateliteMadridONE"
+  },
+  {
+    "id": "cope-elche",
+    "name": "COPE Elche",
+    "info": "FM 100.8, Elx / Elche, España",
+    "stream": "http://5.135.183.124:8183/stream?type=.flv"
+  },
+  {
+    "id": "radio-jove-elx",
+    "name": "Radio Jove Elx",
+    "info": "FM 107.5, Elx / Elche, España",
+    "stream": "http://radiojove.elche.es:8000/radio.mp3"
+  },
+  {
+    "id": "formula-hit-galicia",
+    "name": "Formula Hit Galicia",
+    "info": "Carballo, España",
+    "stream": "http://188.165.219.86:8000/listen.pls?sid=1"
+  },
+  {
+    "id": "kyoto-fm",
+    "name": "Kyoto FM",
+    "info": "FM 103.7, Caldas De Reis, España",
+    "stream": "http://148.251.83.173:9200/listen.pls"
+  },
+  {
+    "id": "cadena-ser-radio-jodar",
+    "name": "Cadena SER - Radio Jódar",
+    "info": "FM 95.3, Jódar, España",
+    "stream": "http://srv3031.lcinternet.com:8003/live1"
+  },
+  {
+    "id": "radiole-costa-de-la-luz",
+    "name": "Radiole Costa de la Luz",
+    "info": "Lepe, España",
+    "stream": "http://tesla.eldialdigital.com:7112/listen.pls"
+  },
+  {
+    "id": "rne-radio-4",
+    "name": "RNE Radio 4",
+    "info": "Madrid, España",
+    "stream": "http://radio4.rtveradio.cires21.com/radio4/mp3/icecast.audio"
+  },
+  {
+    "id": "radio-tentacion",
+    "name": "Radio Tentacion",
+    "info": "FM 93.5, Madrid, España",
+    "stream": "http://88.26.228.190:8010/listen.pls"
+  },
+  {
+    "id": "i-love-fm",
+    "name": "I LOVE FM",
+    "info": "FM 92.2, Madrid, España",
+    "stream": "http://radioserver1.us:7088"
+  },
+  {
+    "id": "loca-fm-madrid",
+    "name": "Loca FM Madrid",
+    "info": "FM 96.0, Madrid, España",
+    "stream": "http://5.39.66.128:23500/listen.pls"
+  },
+  {
+    "id": "fapatur-radio",
+    "name": "Fapatur Radio",
+    "info": "Madrid, España",
+    "stream": "http://fapatur1.no-ip.biz:9000/listen.pls"
+  },
+  {
+    "id": "ibiza-frenchy-people-radio",
+    "name": "Ibiza Frenchy People Radio",
+    "info": "Ibiza, España",
+    "stream": "http://streaming.radionomy.com/Ibiza-Frenchy-People-Radio"
+  },
+  {
+    "id": "ibiza-hot-radio",
+    "name": "Ibiza Hott Radio",
+    "info": "Ibiza, España",
+    "stream": "http://96.66.38.209:8016/listen.pls?sid=1"
+  },
+  {
+    "id": "estacion-ibiza-radio",
+    "name": "Estación Ibiza Radio",
+    "info": "Ibiza, España",
+    "stream": "http://ibizaglobalradio.streaming-pro.com:8024/listen.pls"
+  },
+  {
+    "id": "radio-galega",
+    "name": "Radio Galega",
+    "info": "FM 96.2, Santiago de Compostela, España",
+    "stream": "http://media1.crtvg.es/live/_definst_/radio/playlist.m3u8"
+  },
+  {
+    "id": "scaner-fm",
+    "name": "scannerFM",
+    "info": "Barcelona, España",
+    "stream": "http://streaming.radio.co/s1843fc3d4/listen"
+  },
+  {
+    "id": "onda-cero-malaga",
+    "name": "Onda Cero Málaga",
+    "info": "FM 90.8, Malaga, España",
+    "stream": "http://icecast-streaming.nice264.com/malaga"
+  }
+]
