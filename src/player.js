@@ -21,11 +21,11 @@ export default class Player {
     this.state = {
       appState: null,
       status: null,
-      // TODO: No stations here
+      // TODO: No reference to stations here
       currentStation: null,
     };
     this.setup();
-    this.stream = new Rx.Subject();
+    this.stream = new Rx.BehaviorSubject("PAUSED");
   }
 
   setup() {
@@ -48,12 +48,9 @@ export default class Player {
 
   subscribeToState(fn) {
     RNAudioStreamer.status((err, status) => {
-      this.setState({status: err ? "ERROR" : status});
+      this.setState({status: err ? `ERROR: ${err.toString()}` : status});
     });
-    return this.stream
-      .distinct()
-      .throttleTime(200)
-      .subscribe(fn);
+    return this.stream.subscribe(fn);
   }
 
   setState(newState) {

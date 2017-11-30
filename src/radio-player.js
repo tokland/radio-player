@@ -35,6 +35,7 @@ export default class RadioPlayer extends PureComponent {
     super(props);
     autoBind(this);
     this.state = {
+      loaded: false,
       stations: null,
       stationsVersion: 0,
       currentStation: null,
@@ -79,9 +80,13 @@ export default class RadioPlayer extends PureComponent {
     Promise.all([storage.get("stations"), storage.get("favorites")]).then(([versionedSourceStations, favoriteStationsIds]) => {
       const {stations: sourceStations = [], version: stationsVersion = 0} = versionedSourceStations || {};
       const stations = this.getStations(sourceStations || defaultSourceStations, favoriteStationsIds);
-      this.setState({stations, stationsVersion});
+      this.setState({loaded: true, stations, stationsVersion});
       this.updateLatestStations();
     });
+  }
+
+  componentWillUnmount() {
+    this.playerSubscription.unsubscribe();
   }
 
   onFavoritePress(stationToToggle) {
@@ -90,10 +95,6 @@ export default class RadioPlayer extends PureComponent {
     const favoriteStationsIds = newStations.filter(station => station.favorite).map(station => station.id);
     storage.set('favorites', favoriteStationsIds);
     this.setState({stations: newStations});
-  }
-
-  componentWillUnmount() {
-    this.playerSubscription.unsubscribe();
   }
 
   play(station) {
@@ -113,11 +114,18 @@ export default class RadioPlayer extends PureComponent {
   }
 
   render() {
+    if (this.state.loaded) {
+      return this._render();
+    } else {
+      return null;
+    }
+  }
+
+  _render() {
     const {player} = this.props;
     const {currentStation, stations, favorites, search, status} = this.state;
     const allStations = stations || [];
-    //const initialPage = _(this.state.stations.favorites).isEmpty() ? 0 : 1;
-    const initialPage = 0;
+    const initialPage = _(this.state.stations.favorites).isEmpty() ? 0 : 1;
     const favoriteStations = allStations.filter(station => station.favorite);
     const isPlaying = player.isPlaying();
 

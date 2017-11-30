@@ -6,7 +6,7 @@ const styles = {
   main: {},
   inner: isPlaying => ({flexDirection: "row", height: 80, backgroundColor: isPlaying ? "#DDD" : "#FFF"}),
   logo: {width: 60, height: 60, margin: 10, justifyContent: 'center'},
-  name: {flex: 1, padding: 5, fontSize: 16, lineHeight: 40, justifyContent: 'center', color: '#fff'},
+  name: {flex: 1, padding: 5, fontSize: 16, color: "#000", lineHeight: 40, fontWeight: "bold", justifyContent: 'center'},
   favorite: {width: 32, height: 32, marginTop: 16, marginRight: 10, marginLeft: 10},
 };
 
