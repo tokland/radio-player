@@ -24,8 +24,8 @@ const styles = {
 const jsonUrl = "http://download.zaudera.com/public/radio-player"
 
 const storage = {
-  get: (key) =>
-    AsyncStorage.getItem('@store:' + key).then(value => value? JSON.parse(value) : null).catch(err => null),
+  get: (key, defaultValue = null) =>
+    AsyncStorage.getItem('@store:' + key).then(value => value? JSON.parse(value) : defaultValue).catch(err => defaultValue),
   set: (key, value) =>
     AsyncStorage.setItem('@store:' + key, JSON.stringify(value)).catch(err => null),
 };
@@ -44,10 +44,13 @@ export default class RadioPlayer extends PureComponent {
     };
   }
 
-  getStations(sourceStations, favoriteStationsIds) {
+  getStations(sourceStations, favoriteStationsIds, usageCountByStationId) {
     const idsSet = new Set(favoriteStationsIds);
-    return sourceStations.map(station =>
-        merge(station, {favorite: idsSet.has(station.id), logo_source: {uri: station.logo_url}}));
+    return sourceStations.map(station => merge(station, {
+      favorite: idsSet.has(station.id),
+      logo_source: {uri: station.logo_url},
+      usageCount: usageCountByStationId[station.id] || 0,
+    }));
   }
 
   onPlayerStateChange({status, currentStation}) {
@@ -77,12 +80,22 @@ export default class RadioPlayer extends PureComponent {
   componentDidMount() {
     this.playerSubscription = this.props.player.subscribeToState(this.onPlayerStateChange);
 
-    Promise.all([storage.get("stations"), storage.get("favorites")]).then(([versionedSourceStations, favoriteStationsIds]) => {
-      const {stations: sourceStations = [], version: stationsVersion = 0} = versionedSourceStations || {};
-      const stations = this.getStations(sourceStations || defaultSourceStations, favoriteStationsIds);
-      this.setState({loaded: true, stations, stationsVersion});
-      this.updateLatestStations();
-    });
+    Promise.all([
+        storage.get("stations", {stations: null, version: -1}),
+        storage.get("favorites", []),
+        storage.get("usage", {}),
+      ])
+      .then(([versionedSourceStations, favoriteStationsIds, usageCountByStationId]) => {
+        const {stations: sourceStations, version: stationsVersion} = versionedSourceStations;
+        const stations = this.getStations(sourceStations || defaultSourceStations, favoriteStationsIds, usageCountByStationId);
+
+        this.setState({
+          loaded: true,
+          stations,
+          stationsVersion,
+        });
+        this.updateLatestStations();
+      });
   }
 
   componentWillUnmount() {
@@ -90,18 +103,32 @@ export default class RadioPlayer extends PureComponent {
   }
 
   onFavoritePress(stationToToggle) {
-    const newStations = this.state.stations
-      .map(station => merge(station, {favorite: station.id == stationToToggle.id ? !station.favorite : station.favorite}));
+    const newStations = this.state.stations.map(station =>
+      merge(station, {
+        favorite: station.id == stationToToggle.id ? !station.favorite : station.favorite,
+      })
+    );
     const favoriteStationsIds = newStations.filter(station => station.favorite).map(station => station.id);
     storage.set('favorites', favoriteStationsIds);
     this.setState({stations: newStations});
   }
 
+  incrementUsageCount(station) {
+    const newStations = _(this.state.stations)
+      .map(st => merge(st, {usageCount: st.usageCount + (st.id === station.id ? 1 : 0)}))
+      .value();
+    const newUsage = _(newStations).map(st => [st.id, st.usageCount]).fromPairs().value();
+    storage.set('usage', newUsage);
+    this.setState({stations: newStations});
+  }
+
   play(station) {
+    this.incrementUsageCount(station);
     this.props.player.play(station);
   }
 
   playCurrentStation() {
+    this.incrementUsageCount(station);
     this.props.player.play(this.state.currentStation);
   }
 
@@ -124,7 +151,8 @@ export default class RadioPlayer extends PureComponent {
   _render() {
     const {player} = this.props;
     const {currentStation, stations, favorites, search, status} = this.state;
-    const allStations = stations || [];
+    const order = [["usageCount", "desc"], ["name", "asc"]];
+    const allStations = _(stations).orderBy(..._.zip(...order)).value();
     const initialPage = _(this.state.stations.favorites).isEmpty() ? 0 : 1;
     const favoriteStations = allStations.filter(station => station.favorite);
     const isPlaying = player.isPlaying();
