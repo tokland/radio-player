@@ -3315,7 +3315,7 @@ react-native-audio-streamer@^0.0.9:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/react-native-audio-streamer/-/react-native-audio-streamer-0.0.9.tgz#d08f5f71ea53bc20e8520fbbf21bb695dd85d127"
 
-react-native-fs@:
+react-native-fs@2.8.5:
   version "2.8.5"
   resolved "https://registry.yarnpkg.com/react-native-fs/-/react-native-fs-2.8.5.tgz#f4c6d32bdd636079675f6b5585a23227acaca2ba"
   dependencies:
@@ -3658,9 +3658,9 @@ rx-lite@*, rx-lite@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
 
-rxjs@4:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.0.0.tgz#4c31630a35cb36acde83afa4baeeba6ccede2405"
+rxjs@5.4:
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.4.3.tgz#0758cddee6033d68e0fd53676f0f3596ce3d483f"
   dependencies:
     symbol-observable "^1.0.1"
 
