@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {TouchableHighlight} from 'react-native';
+import {SwipeView} from 'react-native-swipe-view';
 
 const styles = {
   main: {flexDirection: "row", height: 70, backgroundColor: '#222'},
@@ -15,16 +16,20 @@ const images = {
   play: require("../images/play.png"),
 };
 
-export default StatusBar = ({station, status, isPlaying, onPress}) =>
-    station ?
-      <View style={styles.main}>
-        <Image source={station.logo_source} style={styles.logo} />
-        <Text style={styles.name}>
-          {station.name}
-          {__DEV__ ? ` (${status})` : ""}
-        </Text>
+renderStatusBar = ({station, status, isPlaying, onPress, onSwipedOut}) => (
+  <SwipeView onSwipedOut={onSwipedOut}>
+    <View style={styles.main}>
+      <Image source={station.logo_source} style={styles.logo} />
+      <Text style={styles.name}>
+        {station.name}
+        {__DEV__ ? ` (${status})` : ""}
+      </Text>
 
-        <TouchableHighlight onPress={onPress}>
-          <Image source={isPlaying ? images.stop : images.play} style={styles.buttons} />
-        </TouchableHighlight>
-      </View> : null;
+      <TouchableHighlight onPress={onPress}>
+        <Image source={isPlaying ? images.stop : images.play} style={styles.buttons} />
+      </TouchableHighlight>
+    </View>
+  </SwipeView>
+);
+
+export default StatusBar = (props) => props.station ? renderStatusBar(props) : null;

@@ -64,7 +64,7 @@ export default class RadioPlayer extends PureComponent {
       clearTimeout(this.stopStatusTimerId);
       this.stopStatusTimerId = null;
     }
-    this.setState({status, currentStation});
+    this.setState({status});
   }
 
   updateLatestStations() {
@@ -137,7 +137,7 @@ export default class RadioPlayer extends PureComponent {
   play(station) {
     this.incrementUsageCount(station);
     this.props.player.play(station);
-    this.setState({stationIsPlaying: true});
+    this.setState({stationIsPlaying: true, currentStation: station});
   }
 
   playCurrentStation() {
@@ -155,6 +155,11 @@ export default class RadioPlayer extends PureComponent {
 
   render() {
     return this.state.loaded ? this._render() : null;
+  }
+
+  onSwipedOut() {
+    this.props.player.stop();
+    this.setState({stationIsPlaying: false, currentStation: null});
   }
 
   _render() {
@@ -199,6 +204,7 @@ export default class RadioPlayer extends PureComponent {
           isPlaying={isPlaying}
           status={status}
           onPress={isPlaying ? this.stop : this.playCurrentStation}
+          onSwipedOut={this.onSwipedOut}
         />
       </View>
     );

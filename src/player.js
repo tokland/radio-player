@@ -56,7 +56,7 @@ export default class Player {
   setState(newState) {
     const oldState = _.clone(this.state)
     _.extend(this.state, newState);
-    const streamState = _.pick(this.state, ["status", "currentStation"]);
+    const streamState = _.pick(this.state, ["status"]);
     this.stream.next(streamState);
 
     if (oldState.appState === "active" &&
@@ -66,7 +66,7 @@ export default class Player {
     } else if (oldState.appState === "background" &&
                this.state.appState === "active") {
       this.closeNotification();
-    } else if (this.isNotificationVisible) {
+    } else {
       this.renderNotification();
     }
     //this.renderNotification();
@@ -149,7 +149,6 @@ export default class Player {
       });
       RNAudioStreamer.setUrl(station.stream_url);
       RNAudioStreamer.play();
-      //_.delay(() => RNAudioStreamer.seekToTime(20), 5 * 1000);
     }
   }
   
