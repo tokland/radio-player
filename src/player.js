@@ -59,17 +59,11 @@ export default class Player {
     const streamState = _.pick(this.state, ["status"]);
     this.stream.next(streamState);
 
-    if (oldState.appState === "active" &&
-        this.state.appState === "background" &&
-        this.isPlaying()) {
+    if (this.state.appState === "background" && this.isPlaying()) {
       this.renderNotification();
-    } else if (oldState.appState === "background" &&
-               this.state.appState === "active") {
+    } else if (oldState.appState === "background" && this.state.appState === "active") {
       this.closeNotification();
-    } else {
-      this.renderNotification();
     }
-    //this.renderNotification();
   }
 
   handleAppStateChange(appState) {
@@ -79,6 +73,8 @@ export default class Player {
 
   // TODO: Notifications out (as props)
   renderNotification() {
+    if (this.isNotificationVisible) return;
+
     const {status, currentStation} = this.state;
     const isPlaying = this.isPlaying();
 
@@ -108,6 +104,7 @@ export default class Player {
   }
 
   closeNotification() {
+    if (!this.isNotificationVisible) return;
     PushNotification.cancelAllLocalNotifications();
     this.isNotificationVisible = false;
   }
@@ -144,8 +141,8 @@ export default class Player {
       return;
     } else {
       this.setState({
+        isPlaying: true,
         currentStation: station,
-        status: "PREBUFFERING",
       });
       RNAudioStreamer.setUrl(station.stream_url);
       RNAudioStreamer.play();
@@ -153,7 +150,7 @@ export default class Player {
   }
   
   stop() {
-    this.setState({status: "PAUSING"});
+    this.setState({status: "PAUSING", isPlaying: false});
     RNAudioStreamer.pause();
   }
 }
