@@ -15,11 +15,6 @@ const defaultSourceStations = require('./stations-test.json');
 const renderIf = (condition, viewfun) => condition ? viewfun() : null;
 
 const renderTabBar = () => <DefaultTabBar tabStyle={{height: 50}} />;
-const styles = {
-  mainView: {flex: 1, marginTop: 0},
-  tabViews: {marginTop: 0, height: 40},
-  tabView: {marginTop: 50},
-};
 
 const jsonUrl = "http://download.zaudera.com/public/radio-player"
 
@@ -179,13 +174,19 @@ export default class RadioPlayer extends PureComponent {
       isPlaying: isPlaying,
     };
 
+    const styles = {
+      mainView: {flex: 1},
+      tabViews: {marginTop: 0},
+      tabView: {marginTop: 50},
+    };
+
     return (
       <View style={styles.mainView}>
         { /* <Header onSearch={this.onSearch} /> */ }
 
         <ScrollableTabView
             style={styles.tabViews}
-            tabBarTextStyle={{fontFamily: 'Roboto', fontSize: 16}}
+            tabBarTextStyle={{fontFamily: 'Roboto', fontSize: 16, marginTop: 5}}
             initialPage={initialPage}
             renderTabBar={renderTabBar}
             tabBarPosition="overlayTop"
