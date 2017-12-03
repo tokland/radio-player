@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, Image} from 'react-native';
 import {TouchableHighlight} from 'react-native';
 
-
 const styles = {
   main: {flexDirection: "row", height: 70, backgroundColor: '#222'},
   logo: {width: 50, height: 60, margin: 5, justifyContent: 'center'},
@@ -22,6 +21,7 @@ export default StatusBar = ({station, status, isPlaying, onPress}) =>
         <Image source={station.logo_source} style={styles.logo} />
         <Text style={styles.name}>
           {station.name}
+          {__DEV__ ? ` (${status})` : ""}
         </Text>
 
         <TouchableHighlight onPress={onPress}>

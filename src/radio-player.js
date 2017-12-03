@@ -39,6 +39,7 @@ export default class RadioPlayer extends PureComponent {
       stations: null,
       stationsVersion: 0,
       currentStation: null,
+      stationIsPlaying: false,
       search: null,
       status: null,
     };
@@ -68,7 +69,9 @@ export default class RadioPlayer extends PureComponent {
             .then(sourceStations => {
               const favoriteStationsIds = (this.state.stations || [])
                 .filter(station => station.favorite).map(station => station.id);
-              const stations = this.getStations(sourceStations, favoriteStationsIds);
+              const usageCountByStationId = _(this.state.stations)
+                .map(st => [st.id, st.usageCount]).fromPairs().value();
+              const stations = this.getStations(sourceStations, favoriteStationsIds, usageCountByStationId);
               this.setState({stations});
               storage.set("stations", {version: latestVersion, stations: sourceStations});
             })
@@ -125,37 +128,35 @@ export default class RadioPlayer extends PureComponent {
   play(station) {
     this.incrementUsageCount(station);
     this.props.player.play(station);
+    this.setState({stationIsPlaying: true});
   }
 
   playCurrentStation() {
-    this.incrementUsageCount(station);
     this.props.player.play(this.state.currentStation);
+    this.setState({stationIsPlaying: true});
   }
 
   stop() {
     this.props.player.stop();
+    this.setState({stationIsPlaying: false});
   }
 
-  onSearch(text) {
+  onSearch(text: string) {
     this.setState({search: text});
   }
 
   render() {
-    if (this.state.loaded) {
-      return this._render();
-    } else {
-      return null;
-    }
+    return this.state.loaded ? this._render() : null;
   }
 
   _render() {
     const {player} = this.props;
-    const {currentStation, stations, favorites, search, status} = this.state;
+    const {currentStation, stations, favorites, search, status, stationIsPlaying} = this.state;
     const order = [["usageCount", "desc"], ["name", "asc"]];
     const allStations = _(stations).orderBy(..._.zip(...order)).value();
     const initialPage = _(this.state.stations.favorites).isEmpty() ? 0 : 1;
     const favoriteStations = allStations.filter(station => station.favorite);
-    const isPlaying = player.isPlaying();
+    const isPlaying = stationIsPlaying; // player.isPlaying();
 
     const stationsListProps = {
       currentStation: currentStation,

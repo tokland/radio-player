@@ -23,8 +23,9 @@ export default StationItem = ({station, isPlaying, onPress, onFavoritePress}) =>
       <Image source={station.logo_source} style={styles.logo} />
 
       <View style={styles.nameWrapper}>
-        <Text style={styles.name}>{station.name}</Text>
-        {__DEV__ ? <Text style={styles.usageCount}>({station.usageCount})</Text> : null}
+        <Text style={styles.name}>
+          {station.name}{__DEV__ ? ` (${station.usageCount})` : ""}
+        </Text>
       </View>
 
       <TouchableHighlight onPress={() => onFavoritePress(station)}>
