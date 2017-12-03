@@ -9,12 +9,13 @@ const removeCase = (s) => Diacritics.clean(s).toLowerCase();
 const keyExtractor = station => station.id;
 
 // TODO: StationsList: show spinner when loading
-export default StationsList = ({stations, currentStation, search, onPress, onFavoritePress}) => {
+export default StationsList = ({stations, currentStation, search, onPress, onFavoritePress, isPlaying}) => {
   const renderStation = ({item: station}) => (
     <StationItem
       station={station}
       onPress={onPress}
-      isPlaying={currentStation && currentStation.id === station.id}
+      isCurrentStation={currentStation && currentStation.id === station.id}
+      isPlaying={isPlaying}
       onFavoritePress={onFavoritePress}
     />
   );

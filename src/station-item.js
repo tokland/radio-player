@@ -3,13 +3,42 @@ import {View, Text, Image} from 'react-native';
 import {TouchableHighlight} from 'react-native';
 
 const styles = {
-  main: {},
-  inner: isPlaying => ({flexDirection: "row", height: 80, backgroundColor: isPlaying ? "#DDD" : "#FFF"}),
-  logo: {width: 60, height: 60, margin: 10, justifyContent: 'center'},
-  nameWrapper: {flex: 1, padding: 5, justifyContent: 'center'},
-  name: {flex: 1, fontSize: 16, lineHeight: 40, color: "#000", fontWeight: "bold", paddingRight: 20, flexDirection: 'column'},
-  usageCount: {flex: 1, flexDirection: 'column'},
-  favorite: {width: 32, height: 32, marginTop: 16, marginRight: 10, marginLeft: 10},
+  inner: ({isPlaying, isCurrentStation}) => ({
+    flexDirection: "row",
+    height: 80,
+    backgroundColor: isCurrentStation ? (isPlaying ? "#D0D5D0": "#EEE") : "#FFF",
+  }),
+  logo: {
+    width: 60,
+    height: 60,
+    margin: 10,
+    justifyContent: 'center',
+  },
+  nameWrapper: {
+    flex: 1,
+    padding: 5,
+    justifyContent: 'center',
+  },
+  name: {
+    flex: 1,
+    fontSize: 16,
+    lineHeight: 40,
+    color: "#000",
+    fontWeight: "bold",
+    paddingRight: 20,
+    flexDirection: 'column'
+  },
+  usageCount: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  favorite: {
+    width: 32,
+    height: 32,
+    marginTop: 16,
+    marginRight: 10,
+    marginLeft: 10,
+  },
 };
 
 const images = {
@@ -17,9 +46,9 @@ const images = {
   star_unselect: require("../images/star-unselect.png"),
 };
 
-export default StationItem = ({station, isPlaying, onPress, onFavoritePress}) =>
+export default StationItem = ({station, isPlaying, isCurrentStation, onPress, onFavoritePress}) =>
   <TouchableHighlight onPress={() => onPress(station)}>
-    <View style={styles.inner(isPlaying)}>
+    <View style={styles.inner({isPlaying, isCurrentStation})}>
       <Image source={station.logo_source} style={styles.logo} />
 
       <View style={styles.nameWrapper}>

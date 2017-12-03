@@ -17,7 +17,7 @@ const renderIf = (condition, viewfun) => condition ? viewfun() : null;
 const renderTabBar = () => <DefaultTabBar tabStyle={{height: 50}} />;
 const styles = {
   mainView: {flex: 1, marginTop: 0},
-  tabViews: {marginTop: 0},
+  tabViews: {marginTop: 0, height: 40},
   tabView: {marginTop: 50},
 };
 
@@ -43,6 +43,7 @@ export default class RadioPlayer extends PureComponent {
       search: null,
       status: null,
     };
+    this.stopStatusTimerId = null;
   }
 
   getStations(sourceStations, favoriteStationsIds, usageCountByStationId) {
@@ -55,6 +56,14 @@ export default class RadioPlayer extends PureComponent {
   }
 
   onPlayerStateChange({status, currentStation}) {
+    if (status === "STOPPED" || status === "ERROR") {
+      if (!this.stopStatusTimerId) {
+        this.stopStatusTimerId = _.delay(() => this.setState({stationIsPlaying: false}), 5000);
+      }
+    } else if (this.stopStatusTimerId) {
+      clearTimeout(this.stopStatusTimerId);
+      this.stopStatusTimerId = null;
+    }
     this.setState({status, currentStation});
   }
 
@@ -74,10 +83,10 @@ export default class RadioPlayer extends PureComponent {
               const stations = this.getStations(sourceStations, favoriteStationsIds, usageCountByStationId);
               this.setState({stations});
               storage.set("stations", {version: latestVersion, stations: sourceStations});
-            })
-            .catch(err => {});
+            });
         }
-    });
+      })
+      .catch(err => {});;
   }
 
   componentDidMount() {
@@ -132,8 +141,7 @@ export default class RadioPlayer extends PureComponent {
   }
 
   playCurrentStation() {
-    this.props.player.play(this.state.currentStation);
-    this.setState({stationIsPlaying: true});
+    return this.play(this.state.currentStation);
   }
 
   stop() {
@@ -163,6 +171,7 @@ export default class RadioPlayer extends PureComponent {
       onPress: this.play,
       onFavoritePress: this.onFavoritePress,
       search: search,
+      isPlaying: isPlaying,
     };
 
     return (
@@ -171,6 +180,7 @@ export default class RadioPlayer extends PureComponent {
 
         <ScrollableTabView
             style={styles.tabViews}
+            tabBarTextStyle={{fontFamily: 'Roboto', fontSize: 16}}
             initialPage={initialPage}
             renderTabBar={renderTabBar}
             tabBarPosition="overlayTop"
