@@ -13,9 +13,9 @@
 		"react-native": "0.50.4",
 		"react-native-audio-streamer": "^0.0.9",
 		"react-native-fs": "2.8.5",
-		"react-native-push-notification": "^3.0.0",
+		"react-native-push-notification": "github:tokland/react-native-push-notification#radio-player",
 		"react-native-scrollable-tab-view": "^0.8.0",
-		"react-native-swipe-view": "^3.0.0",
+		"react-native-swipe-view": "github:tokland/react-native-swipe-view#radio-player",
 		"rxjs": "5.4"
 	},
 	"devDependencies": {
