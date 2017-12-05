@@ -23,9 +23,11 @@ export default class Player {
       status: null,
       // TODO: No reference to stations here
       currentStation: null,
+      isPlaying: false,
     };
     this.setup();
     this.stream = new Rx.BehaviorSubject("PAUSED");
+    this.canNotificationBeVisible = true;
   }
 
   setup() {
@@ -43,7 +45,8 @@ export default class Player {
   }
 
   isPlaying() {
-    return _(["PLAYING", "BUFFERING", "PREBUFFERING"]).includes(this.state.status);
+    //return _(["PLAYING", "BUFFERING", "PREBUFFERING"]).includes(this.state.status);
+    return this.state.isPlaying;
   }
 
   subscribeToState(fn) {
@@ -59,11 +62,38 @@ export default class Player {
     const streamState = _.pick(this.state, ["status"]);
     this.stream.next(streamState);
 
+    /*
     if (this.state.appState === "background" && this.isPlaying()) {
       this.renderNotification();
     } else if (oldState.appState === "background" && this.state.appState === "active") {
       this.closeNotification();
+    } */
+
+    if (this.state.appState === "active") {
+      this.closeNotification();
+      this.canNotificationBeVisible = true;
+    //} else if (this.state.appState === "background" && !this.isPlaying()) {
+//      this.closeNotification();
+    } else if (oldState.appState === "active" && this.state.appState === "background") {
+        if (this.isPlaying()) {
+          this.renderNotification();
+        }
+    } else {
+      this.renderNotification();
     }
+/*
+    if (oldState.appState === "active" &&
+        this.state.appState === "background" &&
+        this.isPlaying()) {
+       this.renderNotification();
+    } else if (oldState.appState === "background" &&
+               this.state.appState === "active") {
+       this.closeNotification();
+    } else {
+      this.renderNotification();
+     }
+    //this.renderNotification();
+    */
   }
 
   handleAppStateChange(appState) {
@@ -73,7 +103,7 @@ export default class Player {
 
   // TODO: Notifications out (as props)
   renderNotification() {
-    if (this.isNotificationVisible) return;
+    if (!this.canNotificationBeVisible) return;
 
     const {status, currentStation} = this.state;
     const isPlaying = this.isPlaying();
@@ -100,13 +130,13 @@ export default class Player {
       ongoing: !sweepable,
       autoCancel: false,
     });
-    this.isNotificationVisible = true;
+    //this.canNotificationBeVisible = true;
   }
 
   closeNotification() {
-    if (!this.isNotificationVisible) return;
+    //if (!this.canNotificationBeVisible) return;
     PushNotification.cancelAllLocalNotifications();
-    this.isNotificationVisible = false;
+    //this.canNotificationBeVisible = false;
   }
   
   onNotificationAction(action) {
@@ -121,7 +151,7 @@ export default class Player {
         this.stop();
         break;
       case "close":
-        this.isNotificationVisible = false;
+        this.canNotificationBeVisible = false;
         this.stop();
         break;
       default:
