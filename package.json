@@ -15,6 +15,7 @@
 		"react-native-fs": "2.8.5",
 		"react-native-push-notification": "github:tokland/react-native-push-notification#radio-player",
 		"react-native-scrollable-tab-view": "^0.8.0",
+		"react-native-simple-toast": "^0.0.7",
 		"react-native-swipe-view": "github:tokland/react-native-swipe-view#radio-player",
 		"rxjs": "5.4"
 	},

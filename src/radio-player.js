@@ -5,6 +5,7 @@ import {Image, TouchableHighlight, TouchableOpacity, ScrollView, Switch} from 'r
 import _ from 'lodash';
 import autoBind from 'react-auto-bind';
 import ScrollableTabView, {DefaultTabBar} from 'react-native-scrollable-tab-view';
+import Toast from 'react-native-simple-toast';
 
 import StationsList from './stations-list';
 import StatusBar from './status-bar';
@@ -20,9 +21,14 @@ const jsonUrl = "http://download.zaudera.com/public/radio-player"
 
 const storage = {
   get: (key, defaultValue = null) =>
-    AsyncStorage.getItem('@store:' + key).then(value => value? JSON.parse(value) : defaultValue).catch(err => defaultValue),
+    AsyncStorage
+      .getItem('@store:' + key)
+      .then(value => value ? JSON.parse(value) : defaultValue)
+      .catch(err => this.toast(`Cannot get store: ${key}`)),
   set: (key, value) =>
-    AsyncStorage.setItem('@store:' + key, JSON.stringify(value)).catch(err => null),
+    AsyncStorage
+      .setItem('@store:' + key, JSON.stringify(value))
+      .catch(err => this.toast(`Cannot set store: ${key}=${value}`)),
 };
 
 export default class RadioPlayer extends PureComponent {
@@ -50,10 +56,16 @@ export default class RadioPlayer extends PureComponent {
     }));
   }
 
-  onPlayerStateChange({status, currentStation}) {
+  onPlayerStateChange({status}) {
+    const {currentStation} = this.state;
+
     if (status === "STOPPED" || status === "ERROR") {
       if (!this.stopStatusTimerId) {
-        this.stopStatusTimerId = _.delay(() => this.setState({stationIsPlaying: false}), 5000);
+        this.stopStatusTimerId = _.delay(() => {
+          if (currentStation)
+            this.toast(`Error playing: ${currentStation.name}`)
+          this.setState({stationIsPlaying: false});
+        }, 5000);
       }
     } else if (this.stopStatusTimerId) {
       clearTimeout(this.stopStatusTimerId);
@@ -81,7 +93,7 @@ export default class RadioPlayer extends PureComponent {
             });
         }
       })
-      .catch(err => {});;
+      .catch(err => this.toast(`Error uploading stations: ${err}`));
   }
 
   componentDidMount() {
@@ -127,6 +139,10 @@ export default class RadioPlayer extends PureComponent {
     const newUsage = _(newStations).map(st => [st.id, st.usageCount]).fromPairs().value();
     storage.set('usage', newUsage);
     this.setState({stations: newStations});
+  }
+
+  toast(msg) {
+    Toast.show(msg, Toast.SHORT);
   }
 
   play(station) {
