@@ -21,6 +21,7 @@
     "id": "rac1",
     "name": "RAC1",
     "stream_url": "http://streaming3.radiocat.net",
+    "start_position": 20,
     "logo_url": "http://download.zaudera.com/public/radio-player/images/rac1.jpg"
   },
   {

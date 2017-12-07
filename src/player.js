@@ -62,18 +62,9 @@ export default class Player {
     const streamState = _.pick(this.state, ["status"]);
     this.stream.next(streamState);
 
-    /*
-    if (this.state.appState === "background" && this.isPlaying()) {
-      this.renderNotification();
-    } else if (oldState.appState === "background" && this.state.appState === "active") {
-      this.closeNotification();
-    } */
-
     if (this.state.appState === "active") {
       this.closeNotification();
       this.canNotificationBeVisible = true;
-    //} else if (this.state.appState === "background" && !this.isPlaying()) {
-//      this.closeNotification();
     } else if (oldState.appState === "active" && this.state.appState === "background") {
         if (this.isPlaying()) {
           this.renderNotification();
@@ -81,19 +72,6 @@ export default class Player {
     } else {
       this.renderNotification();
     }
-/*
-    if (oldState.appState === "active" &&
-        this.state.appState === "background" &&
-        this.isPlaying()) {
-       this.renderNotification();
-    } else if (oldState.appState === "background" &&
-               this.state.appState === "active") {
-       this.closeNotification();
-    } else {
-      this.renderNotification();
-     }
-    //this.renderNotification();
-    */
   }
 
   handleAppStateChange(appState) {
@@ -174,7 +152,11 @@ export default class Player {
         isPlaying: true,
         currentStation: station,
       });
-      RNAudioStreamer.setUrl(station.stream_url);
+      if (station.start_position) {
+        RNAudioStreamer.setUrlWithOffset(station.stream_url, station.start_position);
+      } else {
+        RNAudioStreamer.setUrl(station.stream_url);
+      }
       RNAudioStreamer.play();
     }
   }
